@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random pages</title>
+  </head>
+  <link rel="stylesheet" href="css/styles.css">
+  <body>
+    <div class="box" id = "heading">
+      <h1> The tasks for <%= month %> <%= day %>,  <%= year %>! </h1>
+    </div>
+    <div class="box">
+        <% for (var i = 0; i < todoList.length; i++) { %>
+          <div class = "item">
+            <input type="checkbox">
+            <p> <%= todoList[i] %> </p>
+          </div>
+        <% } %>
+        <form class="" action="/" method="post">
+          <input type="text" name="newTodoItem"
+          autocomplete="off" placeholder = "Enter a new item">
+          <button type="submit" name="button">+</button>
+        </form>
+    </div>
+
+
+
+  </body>
+</html>

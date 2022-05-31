@@ -2,9 +2,9 @@
 
 
 const express = require("express");
-const boduParser = require("body-parser");
+const bodyParser = require("body-parser");
 const app =  express();
-app.use(boduParser.urlencoded({extended : true}))
+app.use(bodyParser.urlencoded({extended : true}))
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 var todoList = [];
